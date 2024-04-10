@@ -1,0 +1,207 @@
+/*
+Theme Name: Healthy Fitness Gym
+Theme URI: https://www.buywpthemes.net/products/free-fitness-wordpress-theme/
+Author: Peccular
+Author URI: https://www.buywpthemes.net/
+Description: For gym owners and trainers promoting life that is healthy, Fitness Gym WordPress Theme is made for you! One glance is all it is going to take for you to be convinced that it is a great one we’ve curated exclusively for people owning, leasing, or marketing Fitness Gyms. You or your client will feel very proud and happy to display the expertise, equipment, packages, and other aspects on this Healthy Fitness Gym Theme designed on WordPress. It has absolutely stunning and at the same time motivating visual appeal that will draw customers, and compel them to initiate a communication with you. The design has been curated with an in-depth understanding of this niche business and supports your goal of driving more registrations your way. Spaces and sections have been properly balanced to ensure textual content and images create the right mix and balance. You can change the header and other images as per your requirements and timelines. There are social media icons provided on the Healthy Fitness Gym WordPress Theme, which you can link with your social media pages as soon as you download the theme and begin the process of installation. The process is quick and the dashboard is user-friendly, with clear and easy to follow instructions to make your gym live. Since this Fitness Gym theme is done on WordPress, as already mentioned, it comes with an easy to use interface that will help you to manage, maintain, and update your online presence without any outside help from time to time. WordPress based Healthy Fitness Gym theme is compatible on all browsers and syncs with all the devices, no matter which device (mobile phone, laptop, tab and so on) visitor lands on your theme. He will be able to see a clear flow of information along with images. We invite all the gym and fitness training studio owners to have a close look at the visual appeal and functionality of our Healthy Fitness Gym WordPress Theme. Then, download and install it!  
+Version: 0.1
+Tested up to: 5.8
+Requires PHP: 5.6
+License: GPLv3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: healthy-fitness-gym
+Slug: healthy-fitness-gym
+Tags: one-column, two-columns, left-sidebar, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, featured-image-header, featured-images, footer-widgets, full-width-template, theme-options, threaded-comments, translation-ready, blog, grid-layout, portfolio, photography
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+.waves {
+    position: absolute;
+    width: 100%;
+    height: 31vh;
+    margin-bottom: -7px;
+    min-height: 100px;
+    max-height: 150px;
+    bottom: 0;
+}
+.pl-0{padding-left:0;  }
+.m-rl{margin-right: 0;margin-left: 0}
+#slider-section{
+    /* position: relative;
+    overflow: hidden; */
+/*    background: url(assets/images/sliderimage.png);*/
+background: transparent linear-gradient(-30deg, #141E26 0%, #36404B 100%) 0% 0% no-repeat padding-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#slider-section .slideinning{
+    background: #000;
+    opacity: 0.7;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+#slider-section .sl-r-img img{
+    position: relative;
+    text-align: right;
+    width: 76%;
+    float: right;
+}
+
+#service-section {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    z-index: 1;
+    padding:4em 0 0em 0;
+    overflow: hidden;
+    background: #17212a url(assets/images/servicesbg.png) center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blog-area .blog-img{
+    /* -webkit-mask-image: url(assets/images/blog_m.png);
+    mask-image: url(assets/images/blog_m.png); */
+    -webkit-mask-position: center center;
+/*    mask-position: center center;*/
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100%;
+    mask-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+.blog-area .blog-image:before{
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    /* border-top-left-radius: 174px; */
+    /* border-top-right-radius: 312px; */
+    /* border-bottom-left-radius: 291px; */
+    /* border-bottom-right-radius: 200px; */
+    background: #e2bc95;
+    transition: all .4s;
+    top: 0px;
+    right: 7px;
+    border-radius: 256px 237px 252px / 209px 311px;
+    transform: rotate(44deg);
+}
+.footer-area {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    z-index: 1;
+    padding:4em 0 0em 0;
+    overflow: hidden;
+    /* background: url(assets/images/footer.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer-area .f-oly{
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #36404B;
+    opacity: 1;
+}
+
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 320px) {
+    .hero-slider {
+        height: 250px;
+    }
+}
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .videos {
+    position: relative;
+    top: 0;
+  }
+  #aboutus-section {
+    padding: 1em 0em 2em 0em;
+  }
+}
+@media (max-width: 1024px) {
+    .videos {
+        top: 22%;
+    }
+}
+
+.recentcomments a {
+    display: inline-block !important;
+    padding-left: 18px !important;
+    margin: 0 !important;
+}
+
+.slider-img-overlay {
+    position: absolute;
+    left: 0;
+    right: 52.5%;
+    top: 0;
+    bottom: 0;
+    background: #161415;
+    opacity: 1;
+    clip-path: polygon(0 0, 67% 0, 100% 100%, 0% 100%);
+}
+.slider-img-overlay-outer {
+    position: absolute;
+    left: 0;
+    right: 50%;
+    top: 0;
+    bottom: 0;
+    background: #fff;
+    opacity: 1;
+    clip-path: polygon(0 0, 68% 0, 100% 100%, 0% 100%);
+}
+@media (max-width: 991px) {
+.slider-img-overlay-outer {
+    right: 35%;
+}
+.slider-img-overlay {
+    right: 38.5%;
+}
+
+}
